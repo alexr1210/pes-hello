@@ -1,8 +1,8 @@
 ---
-- name: Hello World!
+- name: Yum Update
   hosts: all
 
   tasks:
 
-  - name: Hello World!
-    shell: echo "Hi! Tower is working!"
+  - name: Update all packages
+    yum: name=* state=latest
